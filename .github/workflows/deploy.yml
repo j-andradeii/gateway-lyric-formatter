@@ -26,4 +26,4 @@ jobs:
           npm run build -- --base-href /gateway-lyric-formatter/
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/gateway-lyrics-formatter --branch=gh-pages
+        run: npx angular-cli-ghpages --dir=dist/gateway-lyric-formatter --branch=gh-pages
