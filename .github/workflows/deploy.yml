@@ -31,6 +31,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages \
-              --dir=dist/gateway-lyric-formatter \
+              --dir=dist/ \
               --branch=gh-pages \
               --no-silent
