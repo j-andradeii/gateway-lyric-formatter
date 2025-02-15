@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/font.scss';
+@import 'assets/scss/mixins.scss';
+@import 'assets/scss/buttons.scss';
+@import 'assets/scss/override.scss';
+
+html, body {
+    @include font-regular();
+    margin: 0 !important;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(178, 184, 227, 0.1);
+    border-radius: var(--curved-radius);
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+    @include font-sf-pro-regular();
+    font-weight: 600;
+
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+  
+.v-100 {
+    min-height: 100vh !important;
+}
+
+.v-80 {
+    min-height: 80vh !important;
+}
+
+.v-80-force {
+    height: 80vh !important;
+}
+
+.v-50 {
+    min-height: 50vh !important;
+}
+
+.v-50-force {
+    height: 50vh !important;
+}
+
+.v-60 {
+    min-height: 60vh !important;
+}
+
+.v-60-force {
+    height: 60vh !important;
+}
+
+.v-100-force {
+    height: 500px !important;
+}
+  
+.form {
+    width: 350px;
+}

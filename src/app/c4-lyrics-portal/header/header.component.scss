@@ -1,0 +1,30 @@
+@import '../../../assets/scss/override.scss';
+
+
+.header-container {
+    height: 60px;
+    background-color: white;
+    // z-index: 10;
+    // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+
+
+    .current-user-name {
+        p {
+            margin: 0 !important;
+            padding:  0 !important;
+        }
+    }
+
+    .sign-out-button {
+        padding:  0 !important;
+    }
+
+    .notification-button {
+        border: none !important;
+    }
+}
+
+.grid {
+    height: 60px;
+}

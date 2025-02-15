@@ -1,0 +1,21 @@
+@import '../../../../assets/scss/override.scss';
+
+.result-indicator {
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+}
+.success {
+  background: var(--ion-color-primary);
+}
+.error {
+  background: var(--ion-color-danger);
+}
+h4 {
+  margin: 0;
+}
+::ng-deep .p-dialog .p-dialog-header .p-dialog-header-icon {
+  display: none;
+}

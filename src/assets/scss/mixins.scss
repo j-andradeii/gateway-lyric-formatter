@@ -1,0 +1,44 @@
+:root {
+    --curved-radius: 5px;
+}
+
+
+@mixin font-regular {
+  font-family: var(--HR) !important;
+  font-weight: 400 !important;
+}
+
+@mixin font-bold {
+  font-family: var(--HB) !important;
+//   font-weight: 600 !important;
+}
+
+@mixin font-sf-pro-regular {
+    font-family: var(--SR);
+}
+
+@mixin font-sf-pro-semi-bold {
+  font-family: var(--SSB);
+}
+
+@mixin font-header {
+  font-family: var(--HR) !important;
+  font-weight: 600 !important;
+}
+
+@mixin shadow {
+  box-shadow: 0 15px 25px -5px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 15px 25px -5px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0 15px 25px -5px rgba(0,0,0,0.08);
+}
+
+@mixin image-crop {
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

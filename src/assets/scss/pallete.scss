@@ -1,0 +1,81 @@
+
+:root {
+    --primary: #1B76F8;
+    --primary-hover: #41A0EB;
+    --primary-muted: #99a6fc;
+    --primary-fade: rgba(210, 225, 245, 0.15);
+    --primary-menu: #3B9AE6;
+    --secondary: #682efc;
+    --tertiary: #2b4669;
+    --success: #51AF33;
+    --pending: #E8AF16;
+    --teal: #23CB9D;
+    --accent-hover: #ff8848;
+    --velvet: #ff3251;
+    --velvet-hover: #fa5579;
+    --blue: #398cfd;
+    --blue-hover: #519bff;
+    --dark: #2a2c31;
+    --light-gray: #adadad;
+    --off-white: #EAEBF5;
+    --off-blue: #EBF3FA;
+
+    --primary-gradient: transparent linear-gradient(180deg, #41A0EB 0%, #1070C9 100%) 0% 0% no-repeat padding-box !important;
+    --light-gradient: transparent linear-gradient(180deg, #FEFEFE 0%, #D6D6D6 100%) 0% 0% no-repeat padding-box !important;
+    --velvet-gradient: transparent linear-gradient(180deg, #ff3251 0%, #fa5579 100%) 0% 0% no-repeat padding-box !important;
+    --success-gradient: transparent linear-gradient(180deg, #51AF33 0%, #51AF33 100%) 0% 0% no-repeat padding-box !important;
+
+  }
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-teal {
+  color: var(--teal) !important;
+}
+
+.text-gradient {
+    color: var(--primary-gradient) !important
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-tertiary {
+  color: var(--tertiary) !important;
+}
+
+.text-accent {
+  color: var(--accent-hover) !important;
+}
+
+.text-velvet {
+  color: var(--velvet) !important;
+}
+
+.text-blue {
+  color: var(--blue) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.text-l-gray {
+  color: var(--light-gray);
+}
+
+.text-white {
+  color:  white !important;
+}
+
+
+.bg-velvet {
+  background-color: var(--velvet) !important;
+}

@@ -1,0 +1,250 @@
+@import 'font.scss';
+@import 'pallete.scss';
+@import 'mixins.scss';
+
+p {
+    margin: 2px !important;
+    padding: 2px !important;
+}
+
+::ng-deep .p-component,
+::ng-deep .p-element:not(.pi){
+  @include font-sf-pro-regular();
+}
+
+::ng-deep .p-focus {
+  outline: none;
+  outline-offset: unset !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+::ng-deep .p-button {
+  color: white;
+  border: 0;
+  height: 40px !important;
+}
+
+.button-border-none {
+  border: none !important;
+}
+
+.p-button-link-no-padding {
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+::ng-deep .p-avatar img {
+  @include image-crop();
+}
+
+::ng-deep .p-input-filled .p-inputtext {
+    background-color: #EFEFEF !important;
+}
+
+::ng-deep .p-float-label {
+    margin-top: 2em;
+}
+
+::ng-deep .p-checkbox .p-checkbox-box {
+  border: 2px solid #ced4da !important;
+}
+  
+::ng-deep .p-inputtext{
+    @include font-sf-pro-regular();
+    border-radius: var(--curved-radius);
+    height: 40px !important;
+    border-top: solid thin rgba(0, 0, 0, .5);
+    border-right: solid thin rgba(0, 0, 0, .5);
+    border-left: solid thin rgba(0, 0, 0, .5);
+    border-bottom:solid thin rgba(0, 0, 0, .5);
+}
+
+::ng-deep .p-chips{
+  @include font-sf-pro-regular();
+  border-radius: var(--curved-radius);
+  // height: 40px !important;
+  border-top: solid thin rgba(0, 0, 0, .5);
+  border-right: solid thin rgba(0, 0, 0, .5);
+  border-left: solid thin rgba(0, 0, 0, .5);
+  border-bottom:solid thin rgba(0, 0, 0, .5);
+  .p-inputtext{
+    border: none !important;
+  }
+}
+
+::ng-deep .p-dropdown,
+::ng-deep .p-dropdown:not(.p-disabled).p-focus{
+  @include font-sf-pro-regular();
+  border-radius: var(--curved-radius);
+  height: 40px !important;
+  border-top: solid thin rgba(0, 0, 0, .5) !important;
+  border-right: solid thin rgba(0, 0, 0, .5) !important;
+  border-left: solid thin rgba(0, 0, 0, .5) !important;
+  border-bottom:solid thin rgba(0, 0, 0, .5) !important; 
+}
+
+::ng-deep .p-multiselect,
+::ng-deep .p-multiselect:not(.p-disabled).p-focus{
+  @include font-sf-pro-regular();
+  border-radius: var(--curved-radius);
+  height: 40px !important;
+  border-top: solid thin rgba(0, 0, 0, .5) !important;
+  border-right: solid thin rgba(0, 0, 0, .5) !important;
+  border-left: solid thin rgba(0, 0, 0, .5) !important;
+  border-bottom:solid thin rgba(0, 0, 0, .5) !important; 
+}
+  
+::ng-deep .p-inputtext:disabled {
+    background: #fafafa;
+}
+  
+::ng-deep .p-inputtext:enabled:hover {
+    border-bottom: solid thin var(--primary-hover) !important;
+}
+
+::ng-deep .p-datatable .p-datatable-header  {
+  padding: 1rem 0rem 1rem 0rem !important;
+}
+
+::ng-deep .p-datepicker table td {
+  // padding: 1.5rem !important;
+}
+::ng-deep .p-datepicker table td > span { 
+  height: 10px !important;
+  width: 10px !important;
+  padding: 10px !important;
+}
+
+.opentime-card-panel {
+  width: 280px !important;
+  height: 115px !important;
+  margin: 0.30rem;
+  padding: 0.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF 0% 0% no-repeat padding-box !important;
+  border-radius: 10px !important;
+
+  cursor: pointer;
+
+  .p-card-body {
+    padding: 0 !important;
+    width: 100%;
+  }
+}
+
+
+
+label {
+  font-family: var(--RR) !important;   
+  font-size: 14px;
+  padding-top: 0.8rem !important;
+}
+
+//AUTOCOMPLETE
+.autocomplete-input {
+  width: 100% !important;
+  i.ui-autocomplete-loader {
+    margin: -44px;
+  }
+}
+
+
+.edit-dialog {
+  min-height: 20vw;
+}
+
+@media screen and (min-width: 360px) {
+  .xs\:col {
+    flex-grow: 1;
+    flex-basis: 0 !important;
+    padding: 0.5rem !important;
+  }
+  .xs\:col-fixed {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+  }
+  .xs\:col-1 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 8.3333%;
+  }
+  .xs\:col-2 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 16.6667%;
+  }
+  .xs\:col-3 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 25%;
+  }
+  .xs\:col-4 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 33.3333%;
+  }
+  .xs\:col-5 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 41.6667%;
+  }
+  .xs\:col-6 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .xs\:col-7 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 58.3333%;
+  }
+  .xs\:col-8 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 66.6667%;
+  }
+  .xs\:col-9 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 75%;
+  }
+  .xs\:col-10 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 83.3333%;
+  }
+  .xs\:col-11 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 91.6667%;
+  }
+  .xs\:col-12 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+//AUTOCOMPLETE
+//   ::ng-deep .p-inputtext:enabled:hover,
+//   ::ng-deep .p-inputtext:enabled:focus {
+//     border-top: none;
+//     border-right: none;
+//     border-left: none;
+//     border-bottom: solid thin var(--primary);
+//   }
+
+::ng-deep .p-selectbutton .p-button.p-highlight.days-SUN {
+  background: red !important;
+  border-color: red !important;
+  color: #ffffff;
+}
+
+// ::ng-deep .p-selectbutton .p-button.p-highlight:hover {
+//   background: red !important;
+//   border-color: red !important;
+//   color: #ffffff;
+// }

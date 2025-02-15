@@ -1,0 +1,31 @@
+
+image: node:latest
+
+
+stages:
+    - init
+    - master
+
+init:
+    stage: init
+    image: node:14.15.0
+    script:
+        - npm install --cache .npm --prefer-offline
+        - npm run build
+
+staging:
+    stage: master
+    image: ruby:latest
+    script:
+        - apt-get update -qy
+        - apt-get install -y ruby-dev
+        - apt-get install -y npm
+        - gem install dpl
+        - rm -rf node_modules
+        - npm install --cache .npm --prefer-offline
+        # - dpl --provider=heroku --app=$APP --api-key=$HEROKU_API_KEY
+        - dpl --provider=heroku --app=c4-lyrics-formatter --api-key=d564fd0b-caed-41ce-80f7-0caf1ebbacea
+
+        
+    only:
+        - wip

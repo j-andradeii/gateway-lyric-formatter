@@ -1,0 +1,23 @@
+<!-- <div id="example">
+
+</div> -->
+
+<!-- <p-editor [(ngModel)]="text" [style]="{'height':'320px'}">
+    <ng-template pTemplate="header">
+        <span class="ql-format-group">
+            <span title="Bold" class="ql-format-button ql-bold"></span>
+            <span class="ql-format-separator"></span>
+            <span title="Italic" class="ql-format-button ql-italic"></span>
+            <span class="ql-format-separator"></span>
+            <span title="Underline" class="ql-format-button ql-underline"></span>
+            <span class="ql-format-separator"></span>
+            <span title="Strikethrough" class="ql-format-button ql-strike"></span>
+        </span>
+    </ng-template>
+</p-editor> -->
+<section class="page-container p-2">
+    <p-editor #editor [(ngModel)]="text" [style]="{'height':'75vh'}" (onTextChange)="onTextChange($event)" >
+    </p-editor>
+    <button class="mt-3 mr-3" pButton type="button" label="Format Lyrics" (click)="formatLyrics()" [disabled]="!text || text.length < 1"></button>
+    <button class="mt-3 p-button-help" pButton type="button" label="Export Lyrics" (click)="exportTxt()" disabled></button>
+</section>

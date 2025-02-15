@@ -1,0 +1,13 @@
+<p-dialog [(visible)]="showDialog" [modal]="true" [resizable]="false" [draggable]="false" 
+          [dismissableMask]="true" [responsive]="true">
+    <ng-template pTemplate="header">
+      <div class="flex">
+        <div class="result-indicator pr-2" [ngClass]="isError ? 'error' : 'success'"></div>
+        <h4>{{header}}</h4>
+      </div>
+    </ng-template>
+    <div class="p-2">
+      {{message}}
+    </div>
+</p-dialog>
+  

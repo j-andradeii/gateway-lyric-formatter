@@ -1,0 +1,186 @@
+@import 'pallete.scss';
+@import 'mixins.scss';
+
+
+
+button.primary,
+button.primary:active {
+  background: var(--primary-gradient);
+  color: white !important;
+  &:hover:enabled,
+  &:focus:enabled {
+    background: var(--primary-hover) !important;
+  }
+}
+
+button.light,
+button.light:active {
+  background: var(--light-gradient);
+  color: var(--primary);
+  font-weight: 900 !important;
+  &:hover:enabled,
+  &:focus:enabled {
+    background: #eeeeee !important;
+      color: var(--primary) !important;
+  }
+}
+
+button.velvet,
+button.velvet:active {
+  background: var(--velvet-gradient);
+  color: white;
+
+  &:hover:enabled,
+  &:focus:enabled {
+    background: var(--velvet-hover) !important;
+    color: white !important;
+  }
+}
+
+
+button.gray,
+button.gray:active {
+  background: #e8e8e8;
+  color: var(--dark);
+
+  &:hover:enabled,
+  &:focus:enabled {
+    background: #eeeeee !important;
+    color: var(--dark) !important;
+  }
+}
+
+button.success,
+button.success:active {
+  background: var(--success-gradient);
+  color: white !important;
+
+  &:hover:enabled,
+  &:focus:enabled {
+    background: #985cff !important;
+  }
+}
+
+// button.tertiary,
+// button.tertiary:active {
+//   background: $tertiary;
+//   color: white;
+
+//   &:hover:enabled,
+//   &:focus:enabled {
+//     background: #55657e !important;
+//   }
+// }
+
+// button.gray,
+// button.gray:active {
+//   background: #e8e8e8;
+//   color: $dark;
+
+//   &:hover:enabled,
+//   &:focus:enabled {
+//     background: #eeeeee !important;
+//     color: $dark !important;
+//   }
+// }
+
+// button.accent,
+// button.accent:active,
+// div.accent button,
+// div.accent button:active {
+//   background: $accent;
+
+//   &:hover:enabled {
+//     background: $accent-hover !important;
+//   }
+// }
+
+// button.dark,
+// button.dark:active {
+//   background: $dark;
+//   color: white;
+
+//   &:hover:enabled,
+//   &:focus:enabled, {
+//     background: #4b4d52 !important;
+//   }
+// }
+
+// button.off-white-primary,
+// button.off-white-primary:active {
+//   background: white;
+//   color: $primary;
+
+//   &:hover:enabled,
+//   &:focus:enabled {
+//     background: #f7f8fa !important;
+//     color: $primary-hover !important;
+//   }
+// }
+
+// button.off-white-blue,
+// button.off-white-blue:active {
+//   background: white;
+//   color: $blue;
+
+//   &:hover:enabled,
+//   &:focus:enabled, {
+//     background: #f7f8fa !important;
+//     color: $blue-hover !important;
+//   }
+// }
+
+// button.velvet,
+// button.velvet:active {
+//   background: $velvet;
+//   color: white;
+
+//   &:hover:enabled,
+//   &:focus:enabled {
+//     background: $velvet-hover !important;
+//     color: white !important;
+//   }
+// }
+
+// button.primary-outline,
+// button.primary-outline:active {
+//   border: 1px solid $primary;
+//   color: $primary;
+//   background: transparent;
+
+//   &:hover:enabled,
+//   &:focus:enabled {
+//     border: 1px solid $primary-hover !important;
+//     color: $primary-hover !important;
+//     background: rgba(207, 215, 255, 0.15) !important;
+//   }
+// }
+
+// button.velvet-outline,
+// button.velvet-outline:active {
+//   border: 1px solid $velvet;
+//   color: $velvet;
+//   background: transparent;
+
+//   &:hover:enabled,
+//   &:focus:enabled {
+//     border: 1px solid $velvet-hover !important;
+//     color: $velvet-hover !important;
+//     background: rgba(255, 207, 213, 0.15) !important;
+//   }
+// }
+
+// button.menu-icon,
+// button.menu-icon:active {
+//   background: transparent;
+//   border-radius: 0 !important;
+//   color: $dark;
+//   text-decoration: none;
+
+//   &:hover,
+//   &:focus, {
+//     background: rgba(207, 215, 255, 0.15) !important;
+//     color: $dark !important;
+//     text-decoration: none;
+//   }
+// }
